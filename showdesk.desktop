@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Show Desktop
+Exec=qmlscene %U qml/Main.qml -I /usr/lib/arm-linux-gnueabihf/unity8/qml/
+Icon=assets/logo.svg
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true
