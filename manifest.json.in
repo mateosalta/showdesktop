@@ -10,7 +10,7 @@
             "desktop":  "showdesk.desktop"
         }
     },
-    "version": "3.0",
+    "version": "4.0",
     "maintainer": "Mateo Salta <mateo_salta@yahoo.com>",
     "framework" : "ubuntu-sdk-20.04"
 }

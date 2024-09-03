@@ -11,12 +11,15 @@ int main(int argc, char *argv[])
     app->setApplicationName("showdesk.mateo-salta");
     QQmlEngine *engine = new QQmlEngine(app);
 
-    engine->addImportPath(QStringLiteral("/usr/lib/"__ARCH_TRIPLET__"/lomiri/qml/"));
+    //engine->addImportPath(QStringLiteral("/usr/lib/"__ARCH_TRIPLET__"/lomiri/qml/"));
 
     QQuickView *view = new QQuickView(engine, nullptr);
 
+view->setColor(QColor(Qt::transparent));
+view->setClearBeforeRendering(true);
+
     view->setSource(QUrl("qml/Main.qml"));
-    view->setResizeMode(QQuickView::SizeRootObjectToView);
+    //view->setResizeMode(QQuickView::SizeRootObjectToView);
     view->show();
 
     return app->exec();

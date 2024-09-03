@@ -18,17 +18,13 @@ import QtQuick 2.9
 import Lomiri.Components 1.3
 import QtQuick.Layouts 1.3
 
-import AccountsService 0.1
+//import AccountsService 0.1
 
         Rectangle {
             anchors.fill: parent
+color "transparent"
 
-        Image {
-            anchors.fill: parent
-            visible: true
-            source: AccountsService.backgroundFile
-            fillMode: Image.PreserveAspectCrop
-        }
+
   
     }
 
